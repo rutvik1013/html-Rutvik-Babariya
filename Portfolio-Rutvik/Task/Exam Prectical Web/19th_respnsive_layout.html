@@ -1,0 +1,48 @@
+<!--19. Design a webpage that uses Bootstrap to create a responsive layout.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootsrap Responsive Layout</title>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    </head>
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Mysite</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Responsive Grid Layout -->
+     <div class="container">
+        <div class="row">
+            <div class="col-sm-4 bg-primary">
+                <h3>Column 1</h3>
+        <p>This is the first column.</p>
+
+
+            </div>
+            <div class="col-sm-4 bg-danger">
+                <h3>Column 2</h3>
+                 <p>This is the second column with equal width.</p>
+            </div>
+            <div class="col-sm-4 bg-warning">
+                <h3>Column 3</h3>
+                 <p>This is the third column with equal width.</p>
+            </div>
+        </div>
+     </div>
+      <!-- Footer -->
+  <footer class="container-fluid text-center text-white bg-sucess">
+    
+    &copy; 2025 MySite. All rights reserved.
+  </footer>
+</html>

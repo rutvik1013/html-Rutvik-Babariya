@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        .bio-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+        h3, h6 {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #bio {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #bio-text {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            font-weight: bold;
+        }
+        table {
+            border: 2px solid blue;
+        }
+        table th, table td {
+            border: 1px solid blue !important;
+        }
+        table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        table td {
+            background-color: #e6f7ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center text-danger"><span class="glyphicon glyphicon-user"></span> Babariya Rutvik</h3>
+        <p class="text-center text-success">Fresher Android Developer Just Learning new Technologies</p>
+        <h6 class="text-warning text-center">Android Developer</h6>
+        <hr>
+
+        <!-- Bio Section -->
+        <div class="row bio-section jumbotron">
+            <div class="col-sm-4 text-center">
+                <img src="image2.jpg" alt="Profile Picture" class="img-responsive img-circle" style="width: 150px; height: 150px;">
+            </div>
+            <div class="col-sm-8">
+                <h2 class="text-success text-center" id="bio">Bio</h2>
+                <p class="text-danger text-center" id="bio-text">
+                    I am a fresher Android developer with a passion 
+                    for creating innovative mobile applications. I am 
+                    currently learning new technologies to enhance my skills and 
+                    contribute to exciting projects.<br><br>
+                    Thank you for visiting!
+                </p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Projects Section -->
+        <h3 class="text-center text-primary"><span class="glyphicon glyphicon-briefcase"></span> Projects</h3>
+        <table class="table striped table-bordered table-hover table-info">
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Technologies Used</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Weather App</td>
+                    <td>A simple weather application that provides real-time weather updates.</td>
+                    <td>Kotlin, XML, Android Studio, OpenWeatherMap API</td>
+                    <td><span class="label label-success">Completed</span></td>
+                </tr>
+                <tr>
+                    <td>Chat App</td>
+                    <td>A real-time chat application for Android devices.</td>
+                    <td>Kotlin, XML, Android Studio, Firebase</td>
+                    <td><span class="label label-warning">In Progress</span></td>
+                </tr>
+                <tr>
+                    <td>Todo List</td>
+                    <td>A simple todo list application to manage tasks.</td>
+                    <td>Kotlin, XML, Android Studio</td>
+                    <td><span class="label label-danger">Not Started</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <!-- Contact Section -->
+        <h3 class="text-center text-info"><span class="glyphicon glyphicon-envelope"></span> Contact</h3>
+        <p class="text-center">
+            <strong>Email:</strong> babariya.rutvik@example.com<br>
+            <strong>Phone:</strong> +916354123456<br>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/babariya-rutvik" target="_blank">LinkedIn</a>
+        </p>
+        <hr>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <p>&copy; 2025 Babariya Rutvik. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

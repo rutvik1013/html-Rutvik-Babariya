@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 3 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+  <h3 class="text-center">Bootstrap Form with Input Groups</h3>
+
+  <form>
+    <!-- Full Name with icon -->
+    <div class="form-group">
+      <label>Full Name:</label>
+      <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Full Name">
+      </div>
+    </div>
+
+    <!-- Email with icon -->
+    <div class="form-group">
+      <label>Email:</label>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+        <input type="email" class="form-control" placeholder="Email" required>
+      </div>
+    </div>
+
+    <!-- Password with icon -->
+    <div class="form-group">
+      <label>Password:</label>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input type="password" class="form-control" placeholder="Password">
+      </div>
+    </div>
+
+    <!-- Search with button -->
+    <div class="form-group">
+      <label>Search:</label>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search here">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button">Go</button>
+        </span>
+      </div>
+    </div>
+
+    <!-- Submit button -->
+    <div class="text-center">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

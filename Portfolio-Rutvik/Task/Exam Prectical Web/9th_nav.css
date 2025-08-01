@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* navigation style*/
+nav{
+    background-color: #ff0000;
+    overflow: hidden;
+
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    background-color: #d8b0b0;
+
+}
+nav::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+main{
+    padding: 40px;
+    background-color:#f4f4f4;
+    color: #d8b0b0;
+    
+}

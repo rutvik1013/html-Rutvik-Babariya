@@ -1,0 +1,91 @@
+<!--Create a form in HTML that includes input fields for name, email, and a submit button.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Exam</title>
+
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                padding: 40px;
+            }
+            h2{
+                text-align: center;
+                color: #333;
+
+            }
+            form{
+            background-color: #ffffff;
+            padding: 20px 30px; /* ✅ fixed */
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+            }
+            label{
+                display: block;
+                margin-top: 15px;
+                color: #555;
+
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="number"],
+            input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 12px,20px;
+                margin-top: 20px;
+                width: 100%;
+                border-radius: 7px;
+                cursor: pointer;
+                font-size: 16px;
+
+
+            }
+            input[type="submit"]:hover{
+                background-color: #45a049;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h2>
+            User Registration Form
+        </h2>
+        <form action="#">
+            <label>Full Name:</label>
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Email" required>
+
+            <label>Password:</label>
+            <input type="password" placeholder="Email Password" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Phone Number">
+
+            <label>Age:</label>
+            <input type="number" placeholder="Age">
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+
+</html>

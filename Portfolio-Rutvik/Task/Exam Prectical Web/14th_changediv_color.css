@@ -1,0 +1,24 @@
+.my-div {
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* This rule will now work because .my-div is an adjacent sibling *after* .color-change */
+.color-change:focus + .my-div {
+    background-color: red;
+    color: white; /* Changed text color for better contrast */
+}
+
+.color-change {
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,66 @@
+<!--15. Develop HTML form with Different Input Types.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Many types of forms</title>
+        <link rel="stylesheet" href="15th_form.css">
+
+
+    </head>
+    <body>
+        <h3>User information</h3>
+        <form>
+            <label>Full Name: </label>
+            <input type="text" placeholder="Full Name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Email" required>
+
+            <label>Password: </label>
+            <input type="password" placeholder=" Email Password" required>
+
+            <label>Phone Number: </label>
+            <input type="tel" placeholder="Phone Number">
+
+            <label>Age: </label>
+            <input type="number" placeholder="Age">
+
+            <label>Date Of Birth: </label>
+            <input type="date" placeholder="Date Of Birth" required>
+            <!--Adress-->
+            <label>Adress: </label>
+            <textarea rows="3" placeholder="Adress"></textarea>
+
+
+            <!--Gender-->
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male" >Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+
+
+
+            </div>
+            <!--Skills-->
+            
+            <label>Skills: </label>
+           <div class="checkbox-group">
+            <label><input type="checkbox" name="skills" value="Java">Java</label>
+            <label><input type="checkbox" name="skills" value="Kotlin">Kotlin</label>
+            <label><input type="checkbox" name="skills" value="C">C Language</label>
+            <label><input type="checkbox" name="skills" value="HTML">HTML</label>
+            <label><input type="checkbox" name="skills" value="CSS">CSS</label>
+            <label><input type="checkbox" name="skills" value="Bootstrap">Bootstrsp</label>
+
+           </div>
+
+            <!-- Submit -->
+                  <input type="submit" value="Submit Details">
+            
+
+
+            
+            
+
+        </form>
+    </body>
+</html>

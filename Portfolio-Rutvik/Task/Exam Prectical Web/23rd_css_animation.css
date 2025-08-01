@@ -1,0 +1,56 @@
+/* Fade-in animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        translateY:(30px);
+    }
+    to{
+        opacity: 1;
+        translateY:(0) ;
+    }
+}
+ /* Bounce animation */
+ @keyframes bounce{
+    0%,20%,50%,80%,100%{
+        transform: translate(0);
+    }
+    40%{
+        transform: translateY(-10px);
+    }
+    60%{
+        transform: translate(-5px);
+    }
+ }
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+ }
+ .container{
+    text-align: center;
+    margin-top: 50px;
+ }
+ h1{
+    color: #333;
+ }
+ .btn-animate{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+ }
+ .btn-animate:hover{
+    animation: bounce 0.3s;
+    background-color: #0056b3;
+ }
+

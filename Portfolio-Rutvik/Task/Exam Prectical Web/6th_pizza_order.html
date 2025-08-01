@@ -1,0 +1,118 @@
+<!-- Build an order form for a pizza delivery service. Use various form elements: text fields for name and address, radio buttons for size, checkboxes for toppings, and a number input for quantity. Style the form to match a pizza theme-->
+<!DOCTYPE html>
+<>
+    <head>
+        <title>Pizza Order</title>
+
+         <style>
+            body{
+                font-family: 'Segoe UI',sans-serif;
+                background-color:  #fff5e6;
+                padding: 40px;
+                color: #333;
+            }
+            h2{
+                text-align: center;
+                color: #d35400;
+
+            }
+            form{
+                background-color: #ffe0b3;
+                border: 2px solid #e67e22;
+                max-width: 500px;
+                margin: auto;
+                padding: 20px 30px;
+                border-radius: 12px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+            }
+            label{
+                display: block;
+                margin-top: 15px;
+                font-weight: bold;
+            }
+            input[type="text"],
+            textarea,
+            input[type="number"]
+            {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+
+            }
+            .radio-group,
+            .checkbox-group{
+                 margin-top: 10px;
+            }
+            .radio-group label,
+            .checkbox-group label{
+                 font-weight: normal;
+                 display: block;
+                 margin: 5px 0;
+
+            }
+            input[type="submit"]{
+                background-color: #d35400;;
+                color: white;
+                border: none;
+                padding: 12px;
+                margin-top: 20px;
+                width: 100%;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 16px;
+
+            }
+            input[type="submit"]:hover{
+                background-color:  #e67e22;
+            }
+         </style>
+        </head>
+        
+        <body>
+            <header>
+                <h2>🍕 Pizza Order Form</h2>
+                
+
+            </header>
+            <form>
+
+            
+            <!--Name-->
+                 <label>Customer Name:</label>
+                <input type="text" placeholder="Enter Your Name" required>
+
+                <!--Adress-->
+                <label>Delivery Address:</label>
+                <textarea rows="3" placeholder="Enter Your Adress" required></textarea>
+
+                <!--Pizza Size-->
+                <label>Pizza Size: </label>
+                <div class="radio-group">
+                    <label><input type="radio" name="size" value="small">Small</label>
+                    <label><input type="radio" name="size" value="midium">Midium</label>
+                    <label><input type="radio" name="size" value="large">Large</label>
+
+                </div>
+                <!--Toppings-->
+                <label>toppings:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="toppings" value="pepperoni">pepperoni</label>
+                    <label><input type="checkbox" name="topping" value="Mushrooms"> Mushrooms</label>
+                    <label><input type="checkbox" name="topping" value="Olives"> Olives</label>
+                    <label><input type="checkbox" name="topping" value="Onions"> Onions</label>
+                </div>
+
+                <!-- Quantity -->
+                 <label>Quantity</label>
+                 <input type="number" min="1" value="1" required>
+          
+                  <!-- Submit -->
+                  <input type="submit" value="Place Order">
+          </form>
+        </body>
+
+        
+</html>
